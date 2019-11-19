@@ -18,7 +18,6 @@
 	width: 1063px;
 	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
 	background-color: red;
-	/*z-index: 2;*/
 }
 
 .large {
@@ -28,7 +27,6 @@
 	border: 1px solid white;
 	width: 1417px;
 	font-family: 'Times New Roman', serif;
-	/*z-index: 2;*/
 }
 
 .table {
@@ -74,8 +72,6 @@
 }
 
 #svgId { margin-right: auto; margin-left: auto; display:block; text-align: center; }
-
-/*tr:hover { background-color: red; }*/
 
 .blinkedstr {
 	font-size: 70px;
