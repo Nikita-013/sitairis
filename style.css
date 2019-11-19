@@ -1,0 +1,142 @@
+.header {
+	overflow:hidden;
+	color: white;
+	background-color: #062864;
+	padding-left: 5px;
+	font-size: 50px;
+	text-shadow: 4px 2px 1px #b02735;
+	-webkit-clip-path: polygon(0% 0%, 100% 0, 90% 100%, 0 100%);
+	font-family: 'Times New Roman', serif;
+}
+
+
+
+.little { 
+	margin-top: -50px;
+	margin-left: 356px;
+	height: 50px;
+	width: 1063px;
+	-webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: red;
+	/*z-index: 2;*/
+}
+
+.large {
+	height: 820px;
+	background: linear-gradient(180deg, white, #b02735);
+	border-radius: 0px 0px 10px 10px;
+	border: 1px solid white;
+	width: 1417px;
+	font-family: 'Times New Roman', serif;
+	/*z-index: 2;*/
+}
+
+.table {
+	table-layout: fixed;
+	margin-top: 10px;
+	width: 1397px;
+	border-collapse: collapse;
+	font-family: 'Times New Roman', serif;
+	background-color: white;
+	border: 2px solid #062864;
+	
+}
+
+ .cell {
+ 	border: 2px solid #062864;
+ }
+
+.table-header {
+	font-weight: bold;
+	background-color: #062864;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid #b02735;
+}
+
+.cell2 {
+	background-color: #b02735;
+	color: white;
+}
+
+.text {
+	width: 1397px;
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 20px;
+	color: #062864;
+	text-align: justify;
+}
+
+.string {
+	margin-left: 10px;
+}
+
+#svgId { margin-right: auto; margin-left: auto; display:block; text-align: center; }
+
+/*tr:hover { background-color: red; }*/
+
+.blinkedstr {
+	font-size: 70px;
+	text-align: center;
+	position: relative;
+	margin-top: -170px;
+	-webkit-animation: blink 0.5s linear infinite;  
+	font-weight: bold; 
+	color: white; 
+	font-family: 'Times New Roman', serif;
+}
+
+@-webkit-keyframes blink { 
+	0% { color: white; }
+	50% { color: #ff7878; }
+	100% { color: red; }
+}
+
+.fixed {
+	background-color: #b02735;
+	margin-top: -20px;
+	font-size: 30px;
+	position: fixed;
+	right: 24px;
+}
+
+td {
+    text-align: center;
+    position: relative;
+	z-index: 4;
+}
+
+th {
+    font-weight: bold;
+    position: relative;
+	z-index: 4;
+}
+
+table {
+	overflow: hidden;
+	background: transparent;
+	z-index: 3;
+}
+
+td:hover {
+	background-color: red;
+	z-index: 3;
+}
+ 
+tr:hover {
+	background-color: red;
+}
+ 
+th:hover::after,
+td:hover::after {
+	content: "";
+	position: absolute;
+	background-color: red;
+	left: 0;
+	top: -5000px;
+	height: 10000px;
+	width: 100%;
+	z-index: -1;
+}
